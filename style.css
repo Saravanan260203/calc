@@ -1,0 +1,55 @@
+.all{
+    text-align: center;
+    margin-top: 5%;
+    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.head1{
+    color:whitesmoke;
+    margin-top: 5%;
+    animation: blinkingText 3s infinite;
+}
+
+@keyframes blinkingText{
+    0%{color: whitesmoke;}
+    25%{color: white;}
+    50%{ color:black;}
+    75%{ color:white;}
+    100%{color: whitesmoke;}
+}
+input{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#d{
+    width: 270px;
+    border-radius: 30%;
+}
+#equal{
+    width: 150px;
+    border-radius: 100%;
+}
+.box{
+    margin: 1%;
+}
+#equal:hover{
+    background-color: red;
+}
+
+.box:hover{
+    background-color: red;
+}
+
+@media screen and (max-width:1028px){
+    #equal{
+        width: 100px;
+    }
+    .head1{
+        margin-bottom: 7%;
+        font-size: 45px;
+    }
+    .box{
+        margin: 2%;
+    }
+}

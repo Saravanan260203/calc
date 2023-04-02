@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+     <!--fonawesome-->
+     <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <!--font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">  
+</head>
+<body class="all">
+    <div class="container">
+
+        <h1 class="head1">CALCULATOR</h1>
+        <form name="form1">
+
+            <input type="text" name="answer" id="d">
+            <br>
+            <input type="button" value="C" onclick="form1.answer.value = ' ' " class="box">
+            <input type="button" value="÷" onclick="form1.answer.value += '/' " class="box">
+            <input type="button" value="x" onclick="form1.answer.value += '*' " class="box">
+            <input type="button" value="del" onclick="back()" class="box">
+            <br>
+            <input type="button" value="7" onclick="form1.answer.value += '7' " class="box">
+            <input type="button" value="8" onclick="form1.answer.value += '8' " class="box">
+            <input type="button" value="9" onclick="form1.answer.value += '9' " class="box">
+            <input type="button" value="-" onclick="form1.answer.value += '-' " class="box">
+            <br>
+            <input type="button" value="4" onclick="form1.answer.value += '4' " class="box">
+            <input type="button" value="5" onclick="form1.answer.value += '5' " class="box">
+            <input type="button" value="6" onclick="form1.answer.value += '6' " class="box">
+            <input type="button" value="+" onclick="form1.answer.value += '+' " class="box">
+            <br>
+            <input type="button" value="1" onclick="form1.answer.value += '1' " class="box">
+            <input type="button" value="2" onclick="form1.answer.value += '2' " class="box">
+            <input type="button" value="3" onclick="form1.answer.value += '3' " class="box">
+            <input type="button" value="." onclick="form1.answer.value += '.' " class="box">
+            <br>
+            <input type="button" value="%" onclick="form1.answer.value += '%' " class="box">
+            <input type="button" value="0" onclick="form1.answer.value += '0' " class="box">
+            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)" id="equal">
+            
+
+
+
+        </form>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
